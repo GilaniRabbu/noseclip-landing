@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>acme website co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-container flex">
+      <div class="logo">logo</div>
+      <nav class="nav desktop-nav">
+        <ul class="nav-list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">Why It Works</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Before & After</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shop Bundles</a></li>
+          <li><a href="#" class="contact-btn">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fa-regular fa-bars"></i>
+      </button>
+
+      <nav class="sidebar-nav">
+        <button class="close-btn" aria-label="Close navigation">
+          <i class="fa-regular fa-xmark"></i>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">Why It Works</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Before & After</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shop Bundles</a></li>
+          <li><a href="#" class="contact-btn">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="customer-avatars">
+        <div class="avatar">J</div>
+        <div class="avatar">M</div>
+        <div class="avatar">S</div>
+        <div class="customer-count">30k Happy Customers</div>
+      </div>
+      <h1 class="hero-title">
+        Breathe better,<br>
+        live better!
+      </h1>
+      <p class="hero-description">
+        Discover how effortless breathing can enhance your life.<br class="br-description">
+        Take the first step Today!
+      </p>
+      <a href="#" class="cta-button">
+        Shop Now
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="product-page">
+    <div class="product-container">
+      <div class="image-section">
+        <div class="main-image">
+          <img id="mainImage" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=600&fit=crop"
+            alt="Noseclip" />
+        </div>
+        <div class="thumbnails" id="thumbnails"></div>
+      </div>
+
+      <div class="details-section">
+        <div class="ratings">
+          <div class="stars" id="stars">★★★★★</div>
+          <span>4.5 (500+ Reviews)</span>
+        </div>
+        <h1 class="product-title">Noseclip</h1>
+        <div class="product-price">
+          <span class="current-price">$12.00</span>
+          <span class="old-price">$20.00</span>
+          <span class="product-badge">SAVE 10%</span>
+        </div>
+        <div class="description">
+          <h3>Description</h3>
+          <p>
+            A nasal clip is a small device typically used to pinch or secure the nostrils for various purposes, such as
+            during sports, medical treatments, or personal health practices. It is usually made of flexible or padded
+            materials to ensure comfort and a secure fit. Common uses include:
+          </p>
+        </div>
+        <div class="features" id="features"></div>
+        <button id="addToCartBtn" class="cart-button">
+          <span id="cartText">Add to Cart →</span>
+        </button>
+        <div class="payment-methods">
+          <div><img src="./img/payment-img-01.png" alt="Apple Pay" /></div>
+          <div><img src="./img/payment-img-02.png" alt="Google Pay" /></div>
+          <div><img src="./img/payment-img-03.png" alt="Mastercard" /></div>
+          <div><img src="./img/payment-img-04.png" alt="Shop Pay" /></div>
+          <div><img src="./img/payment-img-05.png" alt="Visa" /></div>
+        </div>
+        <div class="expandable-sections">
+          <div class="expandable-item">
+            <div class="expandable-header" onclick="toggleSection(this)">
+              <span>Sizing information</span>
+              <span class="chevron">
+                <i class="fa-regular fa-chevron-down"></i>
+              </span>
+            </div>
+            <div class="expandable-content">
+              <p>
+                Our noseclip comes in a universal size that fits most adults comfortably.
+                The flexible silicone material adapts to different nose shapes and sizes.
+                For optimal comfort, ensure the clip sits snugly but not too tight.
+              </p>
+            </div>
+          </div>
+          <div class="expandable-item">
+            <div class="expandable-header" onclick="toggleSection(this)">
+              <span>Free resizing</span>
+              <span class="chevron">
+                <i class="fa-regular fa-chevron-down"></i>
+              </span>
+            </div>
+            <div class="expandable-content">
+              <p>
+                If the noseclip doesn't fit perfectly, we offer free resizing within 30 days of purchase.
+                Simply contact our customer service team, and we'll send you a replacement at no additional cost.
+              </p>
+            </div>
+          </div>
+          <div class="expandable-item">
+            <div class="expandable-header" onclick="toggleSection(this)">
+              <span>Money back guarantee & free returns</span>
+              <span class="chevron">
+                <i class="fa-regular fa-chevron-down"></i>
+              </span>
+            </div>
+            <div class="expandable-content">
+              <p>
+                We offer a 60-day money-back guarantee. If you're not completely satisfied with your purchase,
+                return it for a full refund. All returns are free, and we'll even cover the shipping costs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <!-- Pain Points Section -->
+      <div class="about-sub-section">
+        <div class="about-image-container">
+          <img src="./img/about-img-01.png" alt="Man struggling with sleep issues">
+        </div>
+        <div class="about-content">
+          <h2 class="about-section-title">Pain Points</h2>
+          <h3 class="about-section-subtitle">Struggling with Snoring or Congestion?</h3>
+          <p class="about-description">
+            Whether it's snoring, allergies, or breathing difficulties during exercise,
+            our nasal clip is here to help. These issues can disrupt your sleep, lower
+            your energy, and impact your quality of life.
+          </p>
+          <ul class="bullet-list">
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Persistent snoring</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Nasal congestion</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Allergies affecting breathing</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Struggling to breathe during workouts</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution Overview Section -->
+      <div class="about-sub-section solution-section">
+        <div class="about-content">
+          <h2 class="about-section-title">Solution Overview</h2>
+          <h3 class="about-section-subtitle">Struggling with Snoring or Congestion?</h3>
+          <ul class="bullet-list">
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Enhance airflow</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Reduce snoring</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Clear nasal passages</span>
+            </li>
+            <li class="bullet-item">
+              <div class="bullet-icon"></div>
+              <span>Made from soft materials</span>
+            </li>
+          </ul>
+        </div>
+        <div class="about-image-container">
+          <img src="./img/about-img-02.png" alt="Nasal breathing aid solution">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works-section">
+    <div class="works-container">
+      <div class="how-it-works">
+        <h1>How It Works</h1>
+        <p>
+          Using our nasal clip is effortless and effective. Follow these steps to
+          enjoy better airflow and relief from snoring or congestion.
+        </p>
+        <img src="./img/how-it-works-01.png" alt="Person using nasal clip">
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">Step 1</div>
+          <h2>Clean</h2>
+          <p>
+            Clean your nose thoroughly to remove any dirt or oil from the skin.
+            Let your nose dry completely before applying the Tabs.<br>
+            Pro-Tip: Cleanse with soap and water or use an alcohol prep pad for best results.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">Step 2</div>
+          <h2>Apply</h2>
+          <p>
+            Using the Applicator, apply one adhesive Tab to each side of your nose, just
+            above the nostrils. Press each Tab onto your skin to ensure complete
+            contact. Wait a few minutes before attaching the band.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">Step 3</div>
+          <h2>Tab Placement</h2>
+          <p>There are some tips to use U-Will:</p>
+          <p>&middot; Steel disc placed directly above the nostril (not on the nostril)</p>
+          <p>&middot; Contoured indent fits around the nostril</p>
+          <p>
+            &middot; 100% contact with skin on the nose, not the cheek Always be sure to
+            apply the Tabs properly. If the Tabs aren't placed well,
+            the Band will not attach well.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">Step 4</div>
+          <h2>Attach</h2>
+          <p>
+            Place the U-will band over your nose. The magnetic ends of the
+            Band will snap onto the Tabs.<br>
+            Pro-tip: Make sure the Band is not upside down.
+            The magnets should be facing down.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="starter-container">
+      <div class="starter-description">
+        <div class="item">
+          <h2>4 Bands</h2>
+          <p>You can easily choose which works best for you.</p>
+        </div>
+        <div class="item">
+          <h2>15 or 30 Tabs</h2>
+          <p>Tabs are made with 3M tape, they're safe for sensitive skin.</p>
+        </div>
+        <div class="item">
+          <h2>Applicator</h2>
+          <p>Use magnetic applicator to pick up and attach Tab precisely.</p>
+        </div>
+      </div>
+      <div class="starter-image-container">
+        <h1>What's in Starter Kit</h1>
+        <img src="./img/how-it-works-02.png" alt="Starter Kit">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="result-container">
+      <h1 class="result-title">Real Results You <br> Can Feel</h1>
+      <p class="result-subtitle">See the difference our nasal clip can make for snoring and airflow.</p>
+      <div class="result-col">
+        <div class="result-before">
+          <div class="result-img-container">
+            <img src="./img/result-img-01.png" alt="Before">
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>Flimsy</h3>
+              <p>
+                Nasal strips stick to your skin using an aggressive adhesive.
+                When you pull it off your skin goes with it.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>Unsupportive</h3>
+              <p>Nasal strips don't hold your nose open as wide as you make.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Falls off</h3>
+              <p>Don't wake up with your nasal strip stuck to your pillow again.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-after">
+          <div class="result-img-container">
+            <img src="./img/result-img-02.png" alt="After">
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>Actually opens your nose</h3>
+              <p>
+                Inhale deeply, feel as your nose opens to the size Band you wear.
+                We make bands to keep your nose up to 120% more open.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>Durable</h3>
+              <p>
+                Inhale is built strong and durable so your nose stays open all night long,
+                as long as you want it.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>Stays on all nightlong</h3>
+              <p>
+                Inhale will perfectly adhere to your skin so when you awaken,
+                keeping your nasal passage open for uninterrupted breathing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us-section">
+    <div class="why-us-header">
+      <h1>Why Choose Our Nasal Clip?</h1>
+      <p>
+        Our nasal clip provides a simple, effective solution for snoring, congestion,
+        and improved airflow during activities, offering comfort and relief.
+      </p>
+    </div>
+    <div class="why-us-card">
+      <h2>Reduces Snoring</h2>
+      <p>Our nasal clips are specially designed to fit comfortably into your daily routine.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="testimonials">
+      <h1 class="testimonial-title">Loved by Thousands</h1>
+      <div class="testimonial-carousel">
+        <button class="next-button" id="prevBtn" onclick="changeTestimonial(-1)">
+          ←
+        </button>
+        <div class="testimonial-card" id="testimonialCard">
+          <p class="testimonial-text" id="testimonialText">
+            Finally, a product that actually helps with my snoring! My partner sleeps better, and so do I.
+          </p>
+          <div class="customer-info">
+            <div class="customer-profile">
+              <div class="customer-avatar">
+                <img id="customerAvatar" src="/placeholder.svg?height=60&width=60" alt="Customer photo">
+              </div>
+              <div class="customer-name" id="customerName">Alex R</div>
+            </div>
+            <div class="customer-rating">
+              <span id="customerRating">4.9</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </div>
+        <button class="next-button active" id="nextBtn" onclick="changeTestimonial(1)">
+          →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback-section">
+    <div class="feedback-container">
+      <h2 class="feedback-title">Customer Feedback</h2>
+      <div class="feedback-content">
+        <div class="feedback-header">
+          <div class="feedback-info">
+            <img src="./img/testimonial.png" alt="Customer Image">
+            <div class="feedback-name">Arlene McCoy</div>
+          </div>
+          <div class="feedback-time">1 Week Ago</div>
+        </div>
+        <div class="feedback-rating">
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-likes">| ❤️ (1.5K)</div>
+        </div>
+        <div class="feedback-text">
+          This nasal clip has helped me reduce snoring and breathe easier at night.
+          Comfortable and barely noticeable!
+        </div>
+        <img class="feedback-image" src="./img/about-img-02.png" alt="Feedback Image">
+      </div>
+      <div class="feedback-content">
+        <div class="feedback-header">
+          <div class="feedback-info">
+            <img src="./img/testimonial.png" alt="Customer Image">
+            <div class="feedback-name">Ralph Edwards</div>
+          </div>
+          <div class="feedback-time">1 Week Ago</div>
+        </div>
+        <div class="feedback-rating">
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-likes">| ❤️ (1.5K)</div>
+        </div>
+        <div class="feedback-text">
+          I use this nasal clip during my runs, and it really improves airflow.
+          I can breathe more freely and last longer during intense sessions.
+        </div>
+        <img class="feedback-image" src="./img/about-img-02.png" alt="Feedback Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-container">
+      <div class="video-grid">
+        <div class="video-card">
+          <img src="./img/about-img-02.png" alt="Video Thumbnail 1">
+          <div class="play-button"></div>
+        </div>
+        <div class="video-card">
+          <img src="./img/about-img-02.png" alt="Video Thumbnail 2">
+          <div class="play-button"></div>
+        </div>
+        <div class="video-card">
+          <img src="./img/about-img-02.png" alt="Video Thumbnail 3">
+          <div class="play-button"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-container">
+      <p>
+        Choose your plan today and <br class="cta-br">
+        start breathing easier tomorrow!
+      </p>
+      <button class="cta-button">Order Now →</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2 class="footer-title">Get in Touch</h2>
+        <p class="footer-description">
+          Our mission is to drive progress and enhance the lives of our customers by
+          delivering superior products and services that exceed expectations.
+        </p>
+        <a href="#" class="cta-button" onclick="handleOrderClick(event)">
+          Order Now
+          <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="copyright">
+        ©Copyright Nasal clip.com. All rights reserved. 2024
+      </div>
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#privacy">Privacy & Policy</a>
+          <a href="#terms">Terms & Condition</a>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#resources">Resources</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Chat Support">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
