@@ -286,7 +286,7 @@ function startAutoPlay() {
       currentTestimonial = 0;
       updateTestimonial();
     }
-  }, 5000);
+  }, 4000);
 }
 
 function stopAutoPlay() {
