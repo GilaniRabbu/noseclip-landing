@@ -64,10 +64,10 @@ function toggleSection(header) {
 
 
 const productImages = [
-  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&h=600&fit=crop"
+  "./img/nose-clip-01.jpg",
+  "./img/nose-clip-02.jpg",
+  "./img/nose-clip-03.jpg",
+  "./img/nose-clip-04.jpg"
 ];
 
 const features = [
@@ -341,4 +341,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.testimonial-carousel');
   carousel.addEventListener('mouseenter', stopAutoPlay);
   carousel.addEventListener('mouseleave', startAutoPlay);
+});
+
+
+
+
+
+const headers = document.querySelectorAll('.accordion-header');
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+    const parent = header.parentElement;
+
+    // Close all items
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      if (item !== parent) {
+        item.classList.remove('open');
+        item.querySelector('.accordion-header').classList.remove('active');
+      }
+    });
+
+    // Toggle current item
+    parent.classList.toggle('open');
+    header.classList.toggle('active');
+  });
 });
